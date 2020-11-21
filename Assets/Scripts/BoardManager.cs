@@ -43,7 +43,7 @@ public class BoardManager : MonoBehaviour
     {
         UpdateSelection();
 
-        if (Input.GetMouseButtonDown(0))
+         if (Input.GetMouseButtonDown(0))
         {
             if (selectionX >= 0 && selectionY >= 0)
             {
@@ -86,8 +86,7 @@ public class BoardManager : MonoBehaviour
             }
         }
 
-        if (!hasAtLeastOneMove)
-            return;
+        if (!hasAtLeastOneMove) return;
 
         selectedChessman = Chessmans[x, y];
         previousMat = selectedChessman.GetComponent<MeshRenderer>().material;
